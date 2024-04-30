@@ -1,0 +1,165 @@
+{
+    "map_symbols": {
+        "gate_1": "A",
+        "gate_2": "B",
+        "gate_3": "C",
+        "gate_4": "D",
+        "gate_5": "E",
+        "gate_6": "F",
+        "admin_building": "G",
+        "one_stop_shop": "H",
+        "science_vally": "I",
+        "academic_building": "J",
+        "nano_building": "K",
+        "helmy_building": "L",
+        "service_building": "M",
+        "work_shops": "N",
+        "dorms": "P"
+    },
+    "land_marks_xy": {
+        "academic_building": [
+            0,
+            0
+        ],
+        "gate_1": [
+            0,
+            556
+        ],
+        "gate_2": [
+            247,
+            322
+        ],
+        "gate_3": [
+            339,
+            0
+        ],
+        "gate_4": [
+            0,
+            401
+        ],
+        "gate_5": [
+            -353,
+            0
+        ],
+        "gate_6": [
+            -286,
+            386
+        ],
+        "admin_building": [
+            0,
+            258
+        ],
+        "helmy_building": [
+            -157,
+            191
+        ],
+        "nano_building": [
+            126,
+            216
+        ],
+        "service_building": [
+            -334,
+            -130
+        ],
+        "one_stop_shop": [
+            181,
+            317
+        ],
+        "work_shops": [
+            -319,
+            -244
+        ],
+        "dorms": [
+            404,
+            -372
+        ]
+    },
+    "map_graph": {
+        "gate_1": [
+            "gate_2",
+            "gate_6",
+            "admin_building"
+        ],
+        "gate_2": [
+            "gate_1",
+            "gate_3",
+            "one_stop_shop"
+        ],
+        "gate_3": [
+            "gate_2",
+            "gate_4",
+            "one_stop_shop",
+            "dorms"
+        ],
+        "gate_4": [
+            "gate_3",
+            "gate_5",
+            "dorms",
+            "work_shops"
+        ],
+        "gate_5": [
+            "gate_4",
+            "gate_6",
+            "service_building"
+        ],
+        "gate_6": [
+            "gate_1",
+            "gate_5",
+            "service_building",
+            "helmy_building"
+        ],
+        "admin_building": [
+            "gate_1",
+            "helmy_building",
+            "one_stop_shop",
+            "academic_building"
+        ],
+        "academic_building": [
+            "admin_building",
+            "helmy_building",
+            "one_stop_shop",
+            "nano_building",
+            "dorms",
+            "service_building",
+            "work_shops"
+        ],
+        "helmy_building": [
+            "gate_6",
+            "admin_building",
+            "academic_building",
+            "service_building"
+        ],
+        "nano_building": [
+            "one_stop_shop",
+            "academic_building",
+            "dorms"
+        ],
+        "one_stop_shop": [
+            "gate_2",
+            "gate_3",
+            "admin_building",
+            "academic_building",
+            "nano_building"
+        ],
+        "service_building": [
+            "gate_5",
+            "gate_6",
+            "academic_building",
+            "work_shops",
+            "helmy_building"
+        ],
+        "dorms": [
+            "gate_3",
+            "gate_4",
+            "nano_building",
+            "academic_building",
+            "work_shops"
+        ],
+        "work_shops": [
+            "gate_4",
+            "service_building",
+            "dorms",
+            "academic_building"
+        ]
+    }
+}
